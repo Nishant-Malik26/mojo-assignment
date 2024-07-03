@@ -1,38 +1,68 @@
 .App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 7rem;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 7rem;
+  width: 200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginButton {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(47, 47, 120);
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: rgb(22, 22, 56);
+  margin-bottom: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoutButton {
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: white;
+  border: 3px solid red;
+  color: red;
+  width: 7rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: medium;
+  cursor: pointer;
+}
+.logoutButton:hover {
+  color: white;
+  background-color: red;
+}
+
+.profileContainer {
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
   align-items: center;
+}
+
+.imageContainer {
+  width: 2rem;
+  height: 3rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

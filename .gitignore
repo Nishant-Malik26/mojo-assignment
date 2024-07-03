@@ -12,6 +12,8 @@
 /build
 
 # misc
+cert.pem
+key.pem
 .DS_Store
 .env.local
 .env.development.local
