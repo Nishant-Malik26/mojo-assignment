@@ -14,41 +14,11 @@ const App = () => {
     localStorage.getItem("accessToken") || ""
   );
 
-  // (function (d, s, id) {
-  //   var js,
-  //     fjs = d.getElementsByTagName(s)[0];
-  //   if (d.getElementById(id)) {
-  //     return;
-  //   }
-  //   js = d.createElement(s);
-  //   js.id = id;
-  //   js.src = "https://connect.facebook.net/en_US/sdk.js";
-  //   fjs.parentNode.insertBefore(js, fjs);
-  // })(document, "script", "facebook-jssdk");
-
   useEffect(() => {
     if (accessToken) {
       fetchUserPages(accessToken);
     }
   }, [accessToken]);
-
-  // useEffect(() => {
-  //   // Load the SDK asynchronously
-  //   console.log("🚀 ~ useEffect ~ window.FB:", !!window.FB);
-  //   // Initialize the SDK once it's loaded
-  //   if (!!window.FB) {
-  //     window.fbAsyncInit = function () {
-  //       window.FB.init({
-  //         appId: "777658407725817", // Replace with your actual app ID
-  //         cookie: true,
-  //         xfbml: true,
-  //         version: "v20.0", // Use a valid SDK version
-  //       });
-  //       console.log(window.FB.init, "gvhjk");
-  //       window.FB.AppEvents.logPageView();
-  //     };
-  //   }
-  // }, [window.FB]);
 
   const handleFBLogin = () => {
     if (window.FB) {
